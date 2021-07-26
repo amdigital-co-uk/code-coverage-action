@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --collectCoverage",
     "watch": "npm run test -- --watchAll",
-    "build": "ncc build index.js",
+    "build": "ncc build index.js --license licenses.txt",
     "lint": "eslint src/"
   },
   "keywords": [],
