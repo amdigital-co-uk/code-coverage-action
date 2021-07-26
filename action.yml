@@ -1,0 +1,13 @@
+name: 'Code Coverage Check'
+description: 'Validates the code coverage hits the prerequisite level for a Cobertura report'
+inputs:
+  branch_minimum_threshold:  # id of input
+    description: 'The minimum branch threshold required'
+    required: false
+    default: '0'
+  path: 
+    description: 'The path to the Cobertura report'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
