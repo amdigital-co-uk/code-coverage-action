@@ -19,9 +19,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test
+          
+      - run: |
+          npm ci
+          npm run lint
+          npm test
+      
       - uses: actions/upload-artifact@v2
         with:
           name: coverage
