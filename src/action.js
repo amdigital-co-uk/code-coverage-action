@@ -33,8 +33,7 @@ async function action() {
     core.setFailed(
       `Failure to hit branch coverage threshold '${branchThreshold}' actual branch coverage is '${branchCoverage}'`
     );
-  }
-  else {
+  } else {
     core.info(`Branch coverage is ${branchCoverage}%`);
   }
 }
