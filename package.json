@@ -7,7 +7,8 @@
     "test": "jest --collectCoverage",
     "watch": "npm run test -- --watchAll",
     "build": "ncc build index.js --license licenses.txt",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
   },
   "keywords": [],
   "author": "",

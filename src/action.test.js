@@ -77,9 +77,7 @@ test("full coverage doesn't error when threshold is 100", async () => {
   expect(process.exitCode).toBe(0);
   expect(process.stdout.write).toHaveBeenCalledTimes(1);
   expect(process.stdout.write).toHaveBeenCalledWith(
-    expect.stringContaining(
-      "Branch coverage is 100%"
-    )
+    expect.stringContaining("Branch coverage is 100%")
   );
 });
 
@@ -109,8 +107,6 @@ test("partial coverage (16.6%) does not error when threshold is 10", async () =>
   expect(process.exitCode).toBe(0);
   expect(process.stdout.write).toHaveBeenCalledTimes(1);
   expect(process.stdout.write).toHaveBeenCalledWith(
-    expect.stringContaining(
-      "Branch coverage is 16.66%"
-    )
+    expect.stringContaining("Branch coverage is 16.66%")
   );
 });
