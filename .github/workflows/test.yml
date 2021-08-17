@@ -25,7 +25,8 @@ jobs:
           npm run lint
           npm test
       
-      - uses: actions/upload-artifact@v2
+      - name: Produce Coverage report
+        uses: ./
         with:
-          name: coverage
           path: coverage/cobertura-coverage.xml
+          branch_minimum_threshold: 90
